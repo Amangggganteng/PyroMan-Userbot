@@ -15,10 +15,10 @@ from ProjectMan import BOTLOG_CHATID, LOGGER, LOOP, aiosession, bot1, bots
 from ProjectMan.helpers.misc import create_botlog, git, heroku
 
 MSG_ON = """
-🔥 **PyroMan-Userbot Berhasil Di Aktifkan**
+🔥 **Amang-Userbot Berhasil Di KENTOT**
 ━━
-➠ **Userbot Version -** `{}`
-➠ **Ketik** `{}alive` **untuk Mengecheck Bot**
+➠ **KENTOT Version -** `{}`
+➠ **Ketik** `{}alive` **untuk Mengecheck KENTOT**
 ━━
 """
 
@@ -41,7 +41,7 @@ async def main():
             )
         except Exception as a:
             LOGGER("main").warning(a)
-    LOGGER("ProjectMan").info(f"PyroMan-UserBot v{BOT_VER} [🔥 BERHASIL DIAKTIFKAN! 🔥]")
+    LOGGER("ProjectMan").info(f"Amang-UserBot v{BOT_VER} [🔥 BERHASIL DIKENTOT! 🔥]")
     if bot1 and not str(BOTLOG_CHATID).startswith("-100"):
         await create_botlog(bot1)
     await idle()
@@ -49,7 +49,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    LOGGER("ProjectMan").info("Starting PyroMan-UserBot")
+    LOGGER("ProjectMan").info("Starting Amang-UserBot")
     install()
     git()
     heroku()
